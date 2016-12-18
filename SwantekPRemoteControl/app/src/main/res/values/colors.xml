@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tv_status_background">#37f00d</color>
+    <color name="tv_status_text">#0949f6</color>
+    <color name="remote_control_label_font">#000000</color>
+</resources>

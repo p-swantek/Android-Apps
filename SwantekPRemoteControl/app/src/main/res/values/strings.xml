@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SwantekPRemoteControl</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tv_power">TV Power: </string>
+    <string name="speaker_volume">Speaker Volume: </string>
+    <string name="current_channel">Current Channel: </string>
+    <string name="tv_label">My TV</string>
+    <string name="default_power_level">Off</string>
+    <string name="default_volume_level">0</string>
+    <string name="default_channel">001</string>
+    <string name="remote_control_label">My Remote Control</string>
+    <string name="power_switch">Power: </string>
+    <string name="volume_slider">Volume: </string>
+    <string name="channel">Channel</string>
+    <string name="zero_button">0</string>
+    <string name="one_button">1</string>
+    <string name="two_button">2</string>
+    <string name="three_button">3</string>
+    <string name="four_button">4</string>
+    <string name="five_button">5</string>
+    <string name="six_button">6</string>
+    <string name="seven_button">7</string>
+    <string name="eight_button">8</string>
+    <string name="nine_button">9</string>
+    <string name="plus_button">CH+</string>
+    <string name="minus_button">CH-</string>
+    <string name="favorite_channel">Favorite\nChannel</string>
+    <string name="favorite1_button">TBS</string>
+    <string name="favorite2_button">CNN</string>
+    <string name="favorite3_button">WTTW</string>
+    <string name="action_settings">Settings</string>
+</resources>

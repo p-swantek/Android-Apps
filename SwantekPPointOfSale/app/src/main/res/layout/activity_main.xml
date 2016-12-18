@@ -1,0 +1,165 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:id="@+id/new_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:text="@string/new_order"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/new_order_button"/>
+
+        <Button
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:text="@string/new_item"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/new_item_button" />
+
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/item_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.05"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/items"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item"
+            android:textSize="30sp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/menu_entries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textAutoComplete|textCapWords"
+            android:imeOptions="actionDone"
+            android:textSize="25sp"
+            android:gravity="left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/amounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.05">
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:textSize="30sp"
+            android:gravity="start"
+             />
+
+        <EditText
+            android:id="@+id/item_amounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity_default"
+            android:textSize="25sp"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:gravity="right" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_prices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.05">
+
+        <TextView
+            android:id="@+id/unit_price"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="30sp"
+            android:gravity="left"
+            />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/unit_price_default"
+            android:inputType="number|numberDecimal"
+            android:imeOptions="actionDone"
+            android:textSize="25sp"
+            android:gravity="right"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/the_total_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.05">
+
+        <Button
+            android:id="@+id/calculate_total"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/final_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/price_hint"
+            android:textSize="25sp"
+            android:gravity="right"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/the_order_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".6">
+
+        <TextView
+            android:id="@+id/order_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
